@@ -1,0 +1,11 @@
+#!/bin/bash
+# Extended Wayland Display Switch Script
+if [ "$(wlr-randr | grep 'HDMI-A-1')" ]; then
+    swaymsg output HDMI-A-1 enable
+    swaymsg output eDP-1 disable
+    swaymsg output HDMI-A-1 set resolution 1920x1080
+else
+    swaymsg output HDMI-A-1 disable
+    swaymsg output eDP-1 enable
+    swaymsg output eDP-1 set resolution 1366x768
+fi
