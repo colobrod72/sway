@@ -1,0 +1,151 @@
+my-id-sessionchat -   056300dd947e2cbd014ecde4bf66ca3526608fb622032877908e8d201fda0ed508
+
+
+https://drive.google.com/file/d/1b_BCjHX2vPCvnn-hJ1UmLXj72sicwvA2/view?usp=sharing   -ссылка на настроенный iso образ(devuan-6-excalibur_openbox)
+
+
+https://github.com/session-foundation/session-desktop/releases/download/v1.17.7/session-desktop-linux-x86_64-1.17.7.AppImage
+
+
+https://librewolf.net/installation/linux/
+
+
+https://devuan.c3l.lu/devuan_excalibur/installer-iso/devuan_excalibur_6.0.0_amd64_netinstall.iso
+
+
+https://github.com/OneKeyHQ/app-monorepo/releases/download/v5.20.0/OneKey-Wallet-5.20.0-linux-x86_64.AppImage
+
+curl -fsS https://dl.brave.com/install.sh | sh
+
+sudo cp /usr/share/zoneinfo/Asia/Novosibirsk /etc/localtime
+
+
+cat <<EOF
+set superusers="root"
+password_pbkdf2 root
+
+
+https://launchpad.net/veracrypt/trunk/1.26.24/+download/veracrypt-1.26.24-Debian-13-amd64.deb
+
+
+sudo mkfs.vfat -n 'USB2' -I /dev/sdb  - форматирование флешки!
+
+alias s='wmctrl -r "brave" -e 0,350,0,2210,1436'
+
+wmctrl -r "chromium" -e 0,0,0,1820,990
+
+sudo dd if=/dev/zero of=temofile bs=1M count=1024;  -test nvme M2
+
+
+https://www.youtube.com/watch?v=psR8O06plxE&t=3217s
+
+
+https://exchangesumo.com/   - обменник!!!
+
+ffmpeg -i sui.mkv -c copy sui.mp4  - converter video!!!
+
+sudo apt install ecryptfs-utils cryptsetup
+sudo ecryptfs-migrate-home -u zx
+
+sudo useradd as -d /home/as -m
+sudo deluser --remove-home zx
+
+sudo usermod -s /bin/bash as
+
+grub-mkpasswd-pbkdf2(вводим пароль,копируем хеш пароля!!!)
+sudo nano /etc/grub.d/00_header
+cat << EOF
+set superusers='root'
+password_pbkdf2 root (вставляем хеш пароля и сохранемся!!!)
+grub-mkconfig -o /boot/grub/grub.cfg (обновляемся!!!)
+sudo reboot -f (перезагружаемся!!!)
+
+https://suivision.xyz/  -explorer/sui/wallet(инфо)!!!
+
+
+sudo apt install ss
+ss -tul
+sudo ss -tulwn | grep LISTEN
+sudo ss -tulnp | grep LISTEN
+less /etc/service
+
+zenity --question --text 'Удалить навсегда?' --title 'Подтвердите' && rm -rf %F  -удалить безвозвратно!
+
+https://rutube.ru/channel/20478785/  - my-kanal-rutube.ru
+
+rm ~/.bash_history - очистка истории терминала
+
+sudo macchanger -r eth0  -смена MACC-ADDRESS
+
+qemu-img create -f qcow2 test.qcow 19G
+
+qemu-system-x86_64 -hda test.qcow -boot d -cdrom /home/zx/devuan.iso -m 4096 -enable-kvm
+
+qemu-system-x86_64 -hda test.qcow -m 4096 -enable-kvm
+
+
+sudo hdparm -t --direct /dev/nvme0n1
+
+sudo sysbench cpu --cpu-max-prime=20000 --threads=4 --time=0 --events=10000 run
+sensors
+
+
+
+
+
+deb http://gb.deb.devuan.org/merged/ excalibur main contrib non-free non-free-firmware  
+deb-src http://gb.deb.devuan.org/merged/ excalibur main contrib non-free non-free-firmware  
+
+deb http://gb.deb.devuan.org/merged/ excalibur-security main  
+deb-src http://gb.deb.devuan.org/merged/ excalibur-security main  
+
+deb http://gb.deb.devuan.org/merged/ excalibur-updates main  
+deb-src http://gb.deb.devuan.org/merged/ excalibur-updates main
+
+
+
+tar -czvf arxiv.tar.gz arxiv
+tar -xvzf arxiv.tar.gz
+
+
+deb http://ftp.de.debian.org/debian bookworm main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
