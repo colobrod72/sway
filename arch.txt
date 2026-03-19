@@ -1,0 +1,14 @@
+sudo pacman -S  -установка пакетов
+sudo pacman -Syu  - полное обновление
+sudo pacman -Su   - обновление
+
+-Rs — удаляет пакет и его зависимости, если они не используются другими пакетами.
+-Rsu — удаляет пакет и только те зависимости, которые больше не нужны другим пакетам
+
+sudo pacman -Sc  - удаление кеша пакета
+
+                                         fsarchiver!!!-backup???
+
+fsarchiver -e /sda1.fsa -e '/home/netup' -e '/netup' -e '/var/lib/mysql' -e '/var/log' -e '/SAVE' -e '/var/lib/libvirt' -v -a -A savefs /sda1.fsa /dev/sda3
+
+fsarchiver restfs sda3.fsa id=0,dest=/dev/sdb1,mkfs=ext4
